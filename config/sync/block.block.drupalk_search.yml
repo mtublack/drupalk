@@ -1,0 +1,22 @@
+uuid: 0ca1267e-8764-45ab-a2d4-70ace30b89be
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupalk
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: drupalk_search
+theme: drupalk
+region: content
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

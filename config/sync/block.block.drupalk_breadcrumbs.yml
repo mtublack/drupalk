@@ -1,0 +1,22 @@
+uuid: 2ef3700f-80a3-4543-a4f2-a4cd948aced5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalk
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: drupalk_breadcrumbs
+theme: drupalk
+region: content
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

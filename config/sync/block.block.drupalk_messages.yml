@@ -1,0 +1,22 @@
+uuid: c246bd4f-c18b-4d1e-bb37-05de1ad47786
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalk
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalk_messages
+theme: drupalk
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

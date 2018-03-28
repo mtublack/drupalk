@@ -1,0 +1,25 @@
+uuid: 6bf76753-69f5-49f4-9d9c-525bc43efef0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalk
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: drupalk_branding
+theme: drupalk
+region: content
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
