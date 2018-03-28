@@ -1,0 +1,14 @@
+uuid: 0aec9b3f-417e-4284-b7de-635ae8525c5e
+name: 'Drupal Kenya'
+mail: bernard@nandwa.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
