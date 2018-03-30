@@ -10,3 +10,5 @@ base theme: false
 
 regions:
   content: Content
+  header: Header
+  footer: Footer
