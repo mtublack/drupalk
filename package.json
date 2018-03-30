@@ -1,0 +1,31 @@
+{
+  "name": "drupalk",
+  "version": "1.0.0",
+  "description": "Drupal Kenya Dependencies manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtublack/drupalk.git"
+  },
+  "keywords": [
+    "community"
+  ],
+  "author": "Bernard Nandwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtublack/drupalk/issues"
+  },
+  "homepage": "https://github.com/mtublack/drupalk#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.6.0"
+  }
+}
