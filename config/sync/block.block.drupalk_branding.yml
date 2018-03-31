@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: drupalk_branding
 theme: drupalk
-region: content
-weight: 0
+region: none
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:

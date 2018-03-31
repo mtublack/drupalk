@@ -5,6 +5,8 @@
  * Functions to support theming in the drupalk theme.
  */
 
+use Drupal\node\Entity\Node;
+
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
@@ -39,6 +41,18 @@ function drupalk_page_attachments_alter(array &$page) {
  */
 function drupalk_preprocess_page(array &$variables) {
     $variables['logopath'] = '/' . drupal_get_path('theme','drupalk') . '/logo.png';
+
+    //dump($variables);
+
+    if (isset($node)) {
+        // Create variable out of the current node type
+        $node_type = $node->getType();
+
+        // Remove page title block.
+        if (($node_type == 'article')) {
+            unset($variables['page']['content']['drupalk_page_title']);
+        }
+    }
 }
 
 /**
@@ -91,6 +105,34 @@ function drupalk_theme_suggestions_fieldset_alter(array &$suggestions, array $va
 function drupalk_preprocess_node(array &$variables) {
   // Default to turning off byline/submitted.
   //$variables['display_submitted'] = FALSE;
+    $node = $variables['node'];
+
+    /**
+     * Formatting for the articles
+     */
+    if($variables['node']->getType() == 'article'){
+        $variables['title'] = $variables['node']->getTitle();
+        $variables['banner_image'] = file_create_url($variables['node']->field_image->entity->getFileUri());
+        $variables['body'] = $variables['node']->get('body')->value;
+
+        $tags = [];
+        foreach ($node->field_tags as $item) {
+            if ($item->entity) {
+                $tags[$item->entity->id()] = $item->entity->label();
+            }
+        }
+
+        $variables['tags'] = $tags;
+
+        $article_type = [];
+        foreach ($node->field_article_type as $item) {
+            if ($item->entity) {
+                $article_type[$item->entity->id()] = $item->entity->label();
+            }
+        }
+
+        $variables['article_type'] = $article_type;
+    }
 }
 
 /**

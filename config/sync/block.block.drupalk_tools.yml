@@ -12,8 +12,8 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: drupalk_tools
 theme: drupalk
-region: content
-weight: 0
+region: none
+weight: 1
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

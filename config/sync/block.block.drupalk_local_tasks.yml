@@ -8,8 +8,8 @@ _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: drupalk_local_tasks
 theme: drupalk
-region: content
-weight: -7
+region: none
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

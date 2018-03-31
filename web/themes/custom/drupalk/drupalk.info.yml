@@ -12,3 +12,4 @@ regions:
   content: Content
   header: Header
   footer: Footer
+  none: None

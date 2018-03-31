@@ -12,7 +12,7 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: drupalk_footer
 theme: drupalk
-region: content
+region: none
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

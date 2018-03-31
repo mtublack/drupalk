@@ -1,0 +1,30 @@
+<div class="single-article">
+    <div class="">
+
+    </div>
+    <img src="{{ banner_image }}" alt="" class="img-responsive">
+
+    {% if tabs %}
+        {{ tabs }}
+    {% endif %}
+
+    <div>
+        {% for key, type in article_type %}
+            <li><a href="/taxonomy/term/{{ key }}">{{ type }}</a></li>
+        {% endfor %}
+    </div>
+    <div>
+        {{ title }}
+    </div>
+    <div>
+        {{ body|striptags('<p>')|raw }}
+    </div>
+    <div>
+        <ul>
+            {% for key, tag in tags %}
+                <li><a href="/taxonomy/term/{{ key }}">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+

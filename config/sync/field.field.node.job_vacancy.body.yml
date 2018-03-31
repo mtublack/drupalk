@@ -1,0 +1,22 @@
+uuid: 3e688d86-7572-46e1-a2cc-f57c80263aea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.job_vacancy
+  module:
+    - text
+id: node.job_vacancy.body
+field_name: body
+entity_type: node
+bundle: job_vacancy
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

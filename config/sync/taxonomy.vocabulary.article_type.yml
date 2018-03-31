@@ -1,0 +1,9 @@
+uuid: bdad2576-9ece-40a7-afbb-0944849675e3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Type'
+vid: article_type
+description: ''
+hierarchy: 0
+weight: 0

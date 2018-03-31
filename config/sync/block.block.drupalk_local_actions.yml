@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: drupalk_local_actions
 theme: drupalk
-region: content
-weight: -7
+region: none
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

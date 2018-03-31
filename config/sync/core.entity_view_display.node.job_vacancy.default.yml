@@ -1,0 +1,26 @@
+uuid: 0d4788cb-daec-4704-bc8a-916a3f76ad97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_vacancy.body
+    - node.type.job_vacancy
+  module:
+    - text
+    - user
+id: node.job_vacancy.default
+targetEntityType: node
+bundle: job_vacancy
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

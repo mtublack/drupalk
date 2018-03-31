@@ -832,5 +832,6 @@ there.
 .brand img {
   height: 40px; }
 
-body {
-  background: white; }
+.img-responsive {
+  max-width: 100%;
+  height: auto; }

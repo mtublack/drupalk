@@ -1,0 +1,28 @@
+uuid: 1e4b9c39-1125-41db-9575-9112df291418
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_vacancy.body
+    - node.type.job_vacancy
+  module:
+    - text
+    - user
+id: node.job_vacancy.teaser
+targetEntityType: node
+bundle: job_vacancy
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

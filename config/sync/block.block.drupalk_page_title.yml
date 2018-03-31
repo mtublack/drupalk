@@ -2,6 +2,8 @@ uuid: 2b6ee266-92ca-4f40-8671-35b6d0537558
 langcode: en
 status: true
 dependencies:
+  module:
+    - ctools
   theme:
     - drupalk
 _core:
@@ -9,7 +11,7 @@ _core:
 id: drupalk_page_title
 theme: drupalk
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,11 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
