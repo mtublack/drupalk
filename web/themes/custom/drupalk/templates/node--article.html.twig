@@ -2,7 +2,9 @@
     <div class="">
 
     </div>
+    {% if banner_image %}
     <img src="{{ banner_image }}" alt="" class="img-responsive">
+    {% endif %}
 
     {% if tabs %}
         {{ tabs }}
@@ -17,7 +19,7 @@
         {{ title }}
     </div>
     <div>
-        {{ body|striptags('<p>')|raw }}
+        {{ body|striptags('<p>,<bold>,<strong>')|raw }}
     </div>
     <div>
         <ul>
